@@ -11,7 +11,7 @@ const PORT = 5000;
 app.use(
   cors({
     origin: (origin, callback) => {
-      const allowedOrigins = ["http://127.0.0.1:3000", "http://localhost:3000","http://localhost:3001"]; // Allow both localhost and 127.0.0.1
+      const allowedOrigins = [""]; // Allow both localhost and 127.0.0.1
       if (!origin || allowedOrigins.includes(origin)) {
         callback(null, true);
       } else {
