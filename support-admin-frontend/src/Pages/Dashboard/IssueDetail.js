@@ -15,7 +15,7 @@ const IssueDetail = () => {
   useEffect(() => {
     const fetchIssue = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/api/support/${id}`);
+        const response = await axios.get(`https://support-fba5.onrender.com/api/support/${id}`);
         setIssue(response.data);
       } catch (error) {
         console.error("Failed to fetch issue:", error);

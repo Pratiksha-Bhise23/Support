@@ -18,7 +18,7 @@ export default function Dashboard() {
   useEffect(() => {
     const fetchTickets = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/support/history"); // Adjust this API to your backend
+        const response = await axios.get("https://support-fba5.onrender.com/api/support/history"); // Adjust this API to your backend
         setTickets(response.data);
       } catch (error) {
         console.error("Error fetching tickets:", error);

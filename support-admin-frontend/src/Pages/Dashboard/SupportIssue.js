@@ -23,7 +23,7 @@ const SupportIssue = () => {
   useEffect(() => {
     const fetchIssues = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/support");
+        const response = await axios.get("https://support-fba5.onrender.com/api/support");
         const sortedIssues = response.data.sort(
           (a, b) => new Date(b.updated_at) - new Date(a.updated_at)
         );

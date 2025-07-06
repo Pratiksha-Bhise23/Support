@@ -18,7 +18,7 @@ const BookingHistory = () => {
   useEffect(() => {
     const fetchBookings = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/bookings/history");
+        const response = await axios.get("https://support-fba5.onrender.com/api/bookings/history");
         setBookings(response.data);
       } catch (error) {
         console.error("Error fetching booking history:", error);

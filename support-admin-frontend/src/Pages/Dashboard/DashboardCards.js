@@ -12,7 +12,7 @@ export const DashboardCards = () => {
   const fetchDashboardData = async () => {
     try {
       const token = localStorage.getItem("token");
-      const response = await fetch("http://localhost:5000/api/bookings/history", {
+      const response = await fetch("https://support-fba5.onrender.com/api/bookings/history", {
         method: "GET",
         headers: {
           Authorization: `Bearer ${token}`,
